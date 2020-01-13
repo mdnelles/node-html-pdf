@@ -6,10 +6,10 @@ test.createStream()
   .pipe(tapSpec())
   .pipe(process.stdout)
 
-var fs = require('fs')
-var path = require('path')
-var pdf = require('../')
-var html = fs.readFileSync(path.join(__dirname, 'example.html'), 'utf8')
+var fs = require('fs'),
+    path = require('path'),
+    pdf = require('../'),
+    html = fs.readFileSync(path.join(__dirname, 'example.html'), 'utf8');
 
 //
 // API
